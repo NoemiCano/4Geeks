@@ -1,0 +1,383 @@
+/* ---------- DISEÑO RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+	.hero__section {
+		min-height: 0;
+		padding-top: 44px;
+	}
+
+	.hero__container {
+		grid-template-columns: minmax(0, 1fr) minmax(290px, .8fr);
+		gap: 32px;
+		width: 100%;
+	}
+
+	.hero__title {
+		font-size: 40px;
+	}
+
+	.hero__formCard {
+		margin-top: 50px;
+	}
+
+	.badge__container {
+		right: -8px;
+	}
+
+	.career-panel {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.career-photo {
+		grid-column: 1 / -1;
+		max-height: 360px;
+	}
+
+	.review-score {
+		flex-direction: column;
+		gap: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	.navbar {
+		min-height: 58px;
+		padding: 0 18px;
+	}
+
+	.navbar__logo {
+		width: 130px;
+	}
+
+	.hero__section {
+		padding: 36px 20px 52px;
+	}
+
+	.hero__container {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 24px;
+	}
+
+	.hero__title {
+		margin-bottom: 22px;
+		font-size: clamp(34px, 9vw, 44px);
+		line-height: 1.1;
+	}
+
+	.hero__subtitle {
+		margin-bottom: 22px;
+		font-size: 17px;
+	}
+
+	.hero__list {
+		margin-bottom: 30px;
+	}
+
+	.partners__logos {
+		gap: 30px;
+	}
+
+	.partners__img {
+		max-width: 150px;
+		max-height: 42px;
+	}
+
+	.hero__formCard {
+		width: min(100%, 460px);
+		margin: 28px auto 0;
+	}
+
+	.badge__container {
+		top: -47px;
+		right: -18px;
+	}
+
+	.badge__img {
+		width: 115px;
+	}
+
+	.form__h3 {
+		font-size: 25px;
+	}
+
+	.steps-section {
+		padding: 42px 20px 48px;
+	}
+
+	.steps-section h2,
+	.benefits-section h2,
+	.career-section h2,
+	.reviews-section h2,
+	.fit-section h2 {
+		font-size: 25px;
+	}
+
+	.steps-section>p {
+		margin-bottom: 28px;
+	}
+
+	.steps-grid {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+
+	.steps-grid::before {
+		top: 35px;
+		bottom: 35px;
+		left: 39px;
+		width: 1px;
+		height: auto;
+	}
+
+	.step-card {
+		display: grid;
+		grid-template-columns: 80px 1fr;
+		gap: 12px;
+		align-items: center;
+	}
+
+	.step-number {
+		width: 70px;
+		height: 70px;
+		margin: 0;
+		font-size: 26px;
+	}
+
+	.step-card p {
+		padding-left: 0;
+	}
+
+	.step-card p::before {
+		display: none;
+	}
+
+	.benefits-section {
+		padding: 68px 20px 64px;
+	}
+
+	.benefits-section h2 {
+		margin-bottom: 28px;
+	}
+
+	.benefits-grid,
+	.fit-grid {
+		grid-template-columns: 1fr;
+		gap: 8px;
+	}
+
+	.benefit-item {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 12px;
+		min-height: 0;
+		padding: 12px 16px;
+		margin: 0;
+		text-align: left;
+	}
+
+	.benefit-item p {
+		display: none;
+	}
+
+	.benefit-icon {
+		position: static;
+		flex: 0 0 44px;
+		width: 44px;
+		height: 44px;
+	}
+
+	.benefit-item h3 {
+		margin: 0;
+	}
+
+	.career-section {
+		padding: 0 18px 48px;
+	}
+
+	.career-tab-labels {
+		display: none;
+	}
+
+	.career-mobile-nav {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.career-mobile-controls {
+		display: grid;
+		min-height: 54px;
+		grid-template-columns: 40px minmax(0, 1fr) 40px;
+		align-items: center;
+		border-radius: 10px;
+		background: var(--color-primary);
+		color: #fff;
+		text-align: center;
+	}
+
+	.career-mobile-controls label {
+		display: none;
+		cursor: pointer;
+	}
+
+	.career-mobile-title {
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 1.25;
+	}
+
+	.career-mobile-arrow {
+		font-size: 25px;
+		line-height: 1;
+	}
+
+	#career-tab-1:checked~.career-mobile-nav .career-mobile-prev-1,
+	#career-tab-2:checked~.career-mobile-nav .career-mobile-prev-2,
+	#career-tab-3:checked~.career-mobile-nav .career-mobile-prev-3,
+	#career-tab-4:checked~.career-mobile-nav .career-mobile-prev-4,
+	#career-tab-1:checked~.career-mobile-nav .career-mobile-next-1,
+	#career-tab-2:checked~.career-mobile-nav .career-mobile-next-2,
+	#career-tab-3:checked~.career-mobile-nav .career-mobile-next-3,
+	#career-tab-4:checked~.career-mobile-nav .career-mobile-next-4 {
+		display: block;
+	}
+
+	#career-tab-1:checked~.career-mobile-nav .career-mobile-title-1,
+	#career-tab-2:checked~.career-mobile-nav .career-mobile-title-2,
+	#career-tab-3:checked~.career-mobile-nav .career-mobile-title-3,
+	#career-tab-4:checked~.career-mobile-nav .career-mobile-title-4 {
+		display: block;
+	}
+
+	.career-mobile-dots {
+		display: flex;
+		justify-content: center;
+		gap: 9px;
+		padding: 10px 0 0;
+	}
+
+	.career-mobile-dots label {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #c8c8c8;
+		cursor: pointer;
+	}
+
+	#career-tab-1:checked~.career-mobile-nav .career-mobile-dots label:nth-child(1),
+	#career-tab-2:checked~.career-mobile-nav .career-mobile-dots label:nth-child(2),
+	#career-tab-3:checked~.career-mobile-nav .career-mobile-dots label:nth-child(3),
+	#career-tab-4:checked~.career-mobile-nav .career-mobile-dots label:nth-child(4) {
+		background: var(--color-primary);
+	}
+
+	.career-panel {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 14px;
+		min-height: 0;
+	}
+
+	.career-card {
+		padding: 20px;
+	}
+
+	.career-profile {
+		grid-column: 1 / -1;
+	}
+
+	.career-card h3 {
+		font-size: 18px;
+	}
+
+	.career-profile h3 {
+		font-size: 19px;
+	}
+
+	.career-profile p {
+		margin-bottom: 16px;
+	}
+
+	.profile-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.profile-tags img,
+	.profile-tags--big {
+		width: auto;
+		height: 25px;
+		max-width: 100%;
+	}
+
+	.career-photo {
+		grid-column: auto;
+		min-height: 370px;
+		max-height: none;
+	}
+
+	.reviews-section {
+		padding: 34px 18px;
+	}
+
+	.reviews-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 10px;
+	}
+
+	.review-card {
+		min-height: 112px;
+	}
+
+	.review-score span {
+		font-size: 18px;
+	}
+
+	.fit-section {
+		padding: 36px 12px 30px;
+	}
+
+	.fit-intro {
+		margin-bottom: 22px;
+	}
+
+	.fit-grid {
+		gap: 8px;
+	}
+
+	.fit-card {
+		min-height: 72px;
+		align-items: center;
+		gap: 16px;
+		padding: 12px 15px;
+	}
+
+	.fit-icon {
+		width: 40px;
+		height: 40px;
+		flex-basis: 40px;
+	}
+
+	.fit-card h3 {
+		margin: 0;
+		font-size: 15px;
+	}
+
+	.fit-card p {
+		display: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: .01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: .01ms !important;
+	}
+}

@@ -6,11 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>IA Engineering Program: 0 a Experto en 9 Meses</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="mediasQuery.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -50,7 +49,7 @@
 							mejorar tu salario.</li>
 					</ul>
 
-					<!-- LOGOS DE EMPRESAS / RECONOCIMIENTOS -->
+					<!-- LOGOS DE EMPRESAS -->
 					<div class="partners__wrapper">
 						<div class="partners__logos">
 							<img class="partners__img"
@@ -106,8 +105,10 @@
 						<input class="form__name" type="text" placeholder="First Name" required>
 						<input class="form_lastName" type="text" placeholder="Last Name" required>
 						<div class="form_phone phone-field">
-							<span class="phone-country" aria-label="España"><img class="flag-spain" src="https://flagcdn.com/w40/es.png" alt=""><span>+34</span></span>
-							<input type="tel" autocomplete="tel-national" aria-label="Número de teléfono" placeholder="Número de teléfono" required>
+							<span class="phone-country" aria-label="España"><img class="flag-spain"
+									src="https://flagcdn.com/w40/es.png" alt=""><span>+34</span></span>
+							<input type="tel" autocomplete="tel-national" aria-label="Número de teléfono"
+								placeholder="Número de teléfono" required>
 						</div>
 						<input class="form__email" type="email" placeholder="Email Address" required>
 						<button class="form__button" type="submit">Enviadme el temario.</button>
@@ -125,44 +126,51 @@
 			<div class="steps-grid">
 				<div class="step-card">
 					<span class="step-number">01</span>
-					<p><img src="images/libro.PNG" alt="Libro" class="step-icon">Recibes el temario completo y los precios al instante, directo en tu bandeja de entrada.</p>
+					<p><img src="images/libro.PNG" alt="Libro" class="step-icon">Recibes el temario completo y los
+						precios al instante, directo en tu bandeja de entrada.</p>
 				</div>
 				<div class="step-card">
 					<span class="step-number">02</span>
-					<p><img src="images/Telefono.PNG" alt="Teléfono" class="step-icon">Un asesor te llamará en un plazo de 24 horas para responder tus dudas y evaluar si el programa es
+					<p><img src="images/Telefono.PNG" alt="Teléfono" class="step-icon">Un asesor te llamará en un plazo
+						de 24 horas para responder tus dudas y evaluar si el programa es
 						adecuado para ti.</p>
 				</div>
 				<div class="step-card">
 					<span class="step-number">03</span>
-					<p><img src="images/Login.PNG" alt="Decisión" class="step-icon">Tú decides si es lo correcto para ti. Sin presiones ni compromisos.</p>
+					<p><img src="images/Login.PNG" alt="Decisión" class="step-icon">Tú decides si es lo correcto para
+						ti. Sin presiones ni compromisos.</p>
 				</div>
 			</div>
 		</section>
 
-		<!-- SECCIÓN: BENEFICIOS / LO QUE TE LLEVAS -->
+		<!-- SECCIÓN: BENEFICIOS -->
 		<section class="benefits-section">
 			<h2>Diseñado para que te contraten: esto es lo que de verdad te llevas</h2>
 
 			<div class="benefits-grid">
 				<div class="benefit-item">
+					<img src="images/Portfolio.PNG" alt="" class="benefit-icon">
 					<h3>Tu portafolio estará listo antes que tu diploma</h3>
 					<p>Cada módulo termina con un proyecto real que tú mismo despliegas: sistemas RAG, agentes, APIs de
 						IA funcionales. Así, cuando empiecen las entrevistas, no tendrás que improvisar nada que
 						mostrar. Ya lo habrás construido.</p>
 				</div>
 				<div class="benefit-item">
+					<img src="images/reloj.PNG" alt="" class="benefit-icon">
 					<h3>Aprendes lo que las empresas están buscando hoy</h3>
 					<p>LangChain, RAG, PyTorch, bases de datos vectoriales, despliegue. Actualizamos el plan de estudios
 						basándonos en ofertas de empleo reales para Ingenieros de IA, no una vez cada dos años cuando el
 						contenido ya está desfasado.</p>
 				</div>
 				<div class="benefit-item">
+					<img src="images/apoyo.PNG" alt="" class="benefit-icon">
 					<h3>Apoyo profesional que continúa después de graduarte</h3>
 					<p>GeekForce sigue trabajando contigo una vez que termina el programa: coaching 1 a 1, un CV y un
 						perfil de LinkedIn que realmente consiguen entrevistas, simulacros de entrevistas técnicas y
 						presentaciones con empresas de nuestra red de contratación.</p>
 				</div>
 				<div class="benefit-item">
+					<img src="images/pc.PNG" alt="" class="benefit-icon">
 					<h3>Mentores que se dedican a crear IA, no solo a enseñarla</h3>
 					<p>Tus sesiones 1 a 1 son con ingenieros de IA que actualmente despliegan estas soluciones en
 						producción. Cuando te atasques, hablarás con alguien que ya ha resuelto ese mismo problema en su
@@ -189,27 +197,69 @@
 					<label for="career-tab-3" role="tab">Proyectos que convencen</label>
 					<label for="career-tab-4" role="tab">El rol ideal para ti</label>
 				</div>
+				<div class="career-mobile-nav" aria-label="Pestañas de apoyo profesional">
+					<div class="career-mobile-controls">
+						<label class="career-mobile-arrow career-mobile-prev-1" for="career-tab-4"
+							aria-label="Pestaña anterior">‹</label>
+						<label class="career-mobile-arrow career-mobile-prev-2" for="career-tab-1"
+							aria-label="Pestaña anterior">‹</label>
+						<label class="career-mobile-arrow career-mobile-prev-3" for="career-tab-2"
+							aria-label="Pestaña anterior">‹</label>
+						<label class="career-mobile-arrow career-mobile-prev-4" for="career-tab-3"
+							aria-label="Pestaña anterior">‹</label>
+						<label class="career-mobile-title career-mobile-title-1" for="career-tab-1">Listo para trabajar,
+							más rápido</label>
+						<label class="career-mobile-title career-mobile-title-2" for="career-tab-2">Acceso real al
+							empleo</label>
+						<label class="career-mobile-title career-mobile-title-3" for="career-tab-3">Proyectos que
+							convencen</label>
+						<label class="career-mobile-title career-mobile-title-4" for="career-tab-4">El rol ideal para
+							ti</label>
+						<label class="career-mobile-arrow career-mobile-next-1" for="career-tab-2"
+							aria-label="Pestaña siguiente">›</label>
+						<label class="career-mobile-arrow career-mobile-next-2" for="career-tab-3"
+							aria-label="Pestaña siguiente">›</label>
+						<label class="career-mobile-arrow career-mobile-next-3" for="career-tab-4"
+							aria-label="Pestaña siguiente">›</label>
+						<label class="career-mobile-arrow career-mobile-next-4" for="career-tab-1"
+							aria-label="Pestaña siguiente">›</label>
+					</div>
+					<div class="career-mobile-dots" aria-label="Seleccionar pestaña">
+						<label for="career-tab-1" aria-label="Pestaña 1"></label>
+						<label for="career-tab-2" aria-label="Pestaña 2"></label>
+						<label for="career-tab-3" aria-label="Pestaña 3"></label>
+						<label for="career-tab-4" aria-label="Pestaña 4"></label>
+					</div>
+				</div>
 				<div class="career-panels">
 					<div class="career-panel" id="career-panel-1" role="tabpanel">
 						<article class="career-card career-profile">
 							<h3>Construye un perfil atractivo para reclutadores, de forma inteligente.</h3>
-							<p>Prepárate para procesos de contratación reales usando una combinación de herramientas de IA y coaching 1:1. RigoBot revisa tu currículum y LinkedIn en tiempo real. Los mentores de carrera te ayudan a perfeccionar tu historia, portafolio y desempeño en entrevistas para un impacto óptimo.</p>
+							<p>Prepárate para procesos de contratación reales usando una combinación de herramientas de
+								IA y coaching 1:1. RigoBot revisa tu currículum y LinkedIn en tiempo real. Los mentores
+								de carrera te ayudan a perfeccionar tu historia, portafolio y desempeño en entrevistas
+								para un impacto óptimo.</p>
 							<div class="profile-tags">
 								<img src="images/Linkedin.PNG" alt="LinkedIn">
 								<img src="images/Curriculum.PNG" alt="Currículum">
 								<img src="images/Portafolio.PNG" alt="Portafolio">
-								<img class="profile-tags--big" src="images/Carta%20de%20presentacion.PNG" alt="Carta de presentación">
+								<img class="profile-tags--big" src="images/Carta%20de%20presentacion.PNG"
+									alt="Carta de presentación">
 							</div>
 						</article>
 						<article class="career-card career-strategy">
 							<h3>Estrategia profesional, construida para ti</h3>
 							<ul>
-								<li><img class="strategy-icon" src="images/Feedback.PNG" alt=""><span>Feedback 24/7 de RigoBot para auditar tu LinkedIn y currículum</span></li>
-								<li><img class="strategy-icon" src="images/Coaching.PNG" alt=""><span>Coaching y sesiones de estrategia profesional 1:1</span></li>
-								<li><img class="strategy-icon" src="images/Entrevistas.PNG" alt=""><span>Entrevistas simuladas y preparación para entrevistas técnicas</span></li>
+								<li><img class="strategy-icon" src="images/Feedback.PNG" alt=""><span>Feedback 24/7 de
+										RigoBot para auditar tu LinkedIn y currículum</span></li>
+								<li><img class="strategy-icon" src="images/Coaching.PNG" alt=""><span>Coaching y
+										sesiones de estrategia profesional 1:1</span></li>
+								<li><img class="strategy-icon" src="images/Entrevistas.PNG" alt=""><span>Entrevistas
+										simuladas y preparación para entrevistas técnicas</span></li>
 							</ul>
 						</article>
-						<img class="career-photo" src="images/Persona.PNG" alt="Graduada de 4Geeks preparada para su próximo reto profesional">
+						<img class="career-photo" src="images/Persona.PNG"
+							alt="Graduada de 4Geeks preparada para su próximo reto profesional">
 					</div>
 				</div>
 			</div>
@@ -219,10 +269,20 @@
 		<section class="reviews-section">
 			<h2>La academia mejor valorada en todas las plataformas de reseñas</h2>
 			<div class="reviews-grid">
-				<article class="review-card"><img class="review-logo" src="images/Course%20report.PNG" alt="Course Report"><div class="review-score"><span>★★★★★</span><small>4.9 en Course Report</small></div></article>
-				<article class="review-card"><img class="review-logo" src="images/google.PNG" alt="Google"><div class="review-score"><span>★★★★★</span><small>4.8 en Google</small></div></article>
-				<article class="review-card"><img class="review-logo" src="images/carrer%20karma.PNG" alt="Career Karma"><div class="review-score"><span>★★★★★</span><small>4.9 en Career Karma</small></div></article>
-				<article class="review-card"><img class="review-logo" src="images/switchup.PNG" alt="SwitchUp"><div class="review-score"><span>★★★★★</span><small>4.9 en SwitchUp</small></div></article>
+				<article class="review-card"><img class="review-logo" src="images/Course%20report.PNG"
+						alt="Course Report">
+					<div class="review-score"><span>★★★★★</span><small>4.9 en Course Report</small></div>
+				</article>
+				<article class="review-card"><img class="review-logo" src="images/google.PNG" alt="Google">
+					<div class="review-score"><span>★★★★★</span><small>4.8 en Google</small></div>
+				</article>
+				<article class="review-card"><img class="review-logo" src="images/carrer%20karma.PNG"
+						alt="Career Karma">
+					<div class="review-score"><span>★★★★★</span><small>4.9 en Career Karma</small></div>
+				</article>
+				<article class="review-card"><img class="review-logo" src="images/switchup.PNG" alt="SwitchUp">
+					<div class="review-score"><span>★★★★★</span><small>4.9 en SwitchUp</small></div>
+				</article>
 			</div>
 		</section>
 
@@ -232,15 +292,38 @@
 				<h2>¿Es este programa para ti?</h2>
 				<p class="fit-intro">Si asientes con la cabeza a las cuatro, esto es para ti.</p>
 				<div class="fit-grid">
-					<article class="fit-card"><img class="fit-icon" src="images/reloj.PNG" alt=""><div><h3>Estás listo para comprometerte</h3><p>20-24 horas a la semana durante 24 semanas. Clases en vivo, proyectos reales, intensidad real. Tú pones el compromiso; nosotros, el método y los resultados.</p></div></article>
-					<article class="fit-card"><img class="fit-icon" src="images/maletin.PNG" alt=""><div><h3>Quieres una carrera, no un certificado</h3><p>Estás aquí para construir con IA, conseguir un empleo bien pagado y dar un verdadero giro a tu carrera. Para eso exactamente está diseñado este programa.</p></div></article>
-					<article class="fit-card"><img class="fit-icon" src="images/apoyo.PNG" alt=""><div><h3>Quieres un apoyo que realmente esté ahí</h3><p>Hitos claros, instructores expertos y tutoría personalizada 1 a 1 ilimitada en cada paso del camino.</p></div></article>
-					<article class="fit-card"><img class="fit-icon" src="images/estrellas.PNG" alt=""><div><h3>Estás pensando a largo plazo</h3><p>Estás listo para incorporarte a uno de los campos de mayor crecimiento y mejor pagados de la próxima década, y quieres las habilidades que lo respalden.</p></div></article>
+					<article class="fit-card"><img class="fit-icon" src="images/reloj.PNG" alt="">
+						<div>
+							<h3>Estás listo para comprometerte</h3>
+							<p>20-24 horas a la semana durante 24 semanas. Clases en vivo, proyectos reales, intensidad
+								real. Tú pones el compromiso; nosotros, el método y los resultados.</p>
+						</div>
+					</article>
+					<article class="fit-card"><img class="fit-icon" src="images/maletin.PNG" alt="">
+						<div>
+							<h3>Quieres una carrera, no un certificado</h3>
+							<p>Estás aquí para construir con IA, conseguir un empleo bien pagado y dar un verdadero giro
+								a tu carrera. Para eso exactamente está diseñado este programa.</p>
+						</div>
+					</article>
+					<article class="fit-card"><img class="fit-icon" src="images/apoyo.PNG" alt="">
+						<div>
+							<h3>Quieres un apoyo que realmente esté ahí</h3>
+							<p>Hitos claros, instructores expertos y tutoría personalizada 1 a 1 ilimitada en cada paso
+								del camino.</p>
+						</div>
+					</article>
+					<article class="fit-card"><img class="fit-icon" src="images/estrellas.PNG" alt="">
+						<div>
+							<h3>Estás pensando a largo plazo</h3>
+							<p>Estás listo para incorporarte a uno de los campos de mayor crecimiento y mejor pagados de
+								la próxima década, y quieres las habilidades que lo respalden.</p>
+						</div>
+					</article>
 				</div>
 			</div>
 		</section>
 	</main>
-
 </body>
 
 </html>
